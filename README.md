@@ -94,7 +94,7 @@ FPS = 60  # Frames per second – how often the screen updates (60 is standard)
 >
 > FPS is a variable, a kind of “box” that can store a value, we can check its value and also replace its value. 👍 It is good habit to use names that tell us what kind of data the variable contains, in this case frames-per-second. When we know we will never change the value of the variable, we often write it in capital letters and we call it a  “constant”.
 
-Next wee need to create our **canvas screen** where things will be drawn. In Pygame (and most graphics libraries), the screen works like a piece of graph paper—a 2D Cartesian plane (maths in action!). We use `x` and `y` coordinates to describe positions, where each point is a pixel that can be coloured:
+Next we need to create our **canvas screen** where things will be drawn. In Pygame (and most graphics libraries), the screen works like a piece of graph paper—a 2D Cartesian plane (maths in action!). We use `x` and `y` coordinates to describe positions, where each point is a pixel that can be coloured:
 
 - The top-left corner is `(0, 0)` — see computers start with 0, not 1! 😯
 - Moving right increases `x`; moving down increases `y`
@@ -289,7 +289,7 @@ if (<condition: ball beyond floor>):
     ball_y = <value to set the ball exactly at floor>
 ```
 
-Ty it! 🏀
+Try it! 🏀
 
 _Does it look right?  What if we change say 14 pixels down every frame?_ If it doesn’t look exactly right, think carefully: 🤔
 
@@ -522,7 +522,7 @@ Then, at the moment of bouncing, play it! 🎵
 bounce_snd.play()
 ```
 
-⚠️ **Important:** is the sound always playing once still the ground? _Why?_
+⚠️ **Important:** does the sound keep playing once the ball is still on the ground? _Why?_
 
 🛠️ One way to fix it:
 

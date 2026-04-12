@@ -11,25 +11,25 @@ This repository steps students through the project in a 1-day tutorial, beginnin
 
 - [Falling Ball Simulation Workshop](#falling-ball-simulation-workshop)
   - [Setup and Requirements](#setup-and-requirements)
-  - [🕹️ Part I: Tutorial Overview](#️-part-i-tutorial-overview)
+  - [⚽ Part I: Tutorial Overview](#-part-i-tutorial-overview)
     - [1️⃣ Prepare your JuiceMind workspace and test run](#1️⃣-prepare-your-juicemind-workspace-and-test-run)
     - [2️⃣ Setup screen and draw a circle (the “ball”)](#2️⃣-setup-screen-and-draw-a-circle-the-ball)
       - [📖 The flip-book simulator...](#-the-flip-book-simulator)
     - [3️⃣ Let’s move the ball higher up!](#3️⃣-lets-move-the-ball-higher-up)
     - [4️⃣  Make the ball fall like magic](#4️⃣--make-the-ball-fall-like-magic)
     - [✅ Mission Complete!](#-mission-complete)
-  - [🕹️ Part 2: Add a Floor – Make the Ball Bounce!](#️-part-2-add-a-floor--make-the-ball-bounce)
+  - [🧱 Part 2: Add a Floor – Make the Ball Bounce!](#-part-2-add-a-floor--make-the-ball-bounce)
     - [1️⃣ Define the Floor](#1️⃣-define-the-floor)
     - [2️⃣ Draw the Floor](#2️⃣-draw-the-floor)
     - [3️⃣ Stop the Ball at the Floor](#3️⃣-stop-the-ball-at-the-floor)
     - [🎉 **You Did It!**](#-you-did-it)
-  - [🕹️ Part 3: Add Gravity – Make the Ball Fall Faster! Plan](#️-part-3-add-gravity--make-the-ball-fall-faster-plan)
+  - [🍃 Part 3: Add Gravity – Make the Ball Fall Faster! Plan](#-part-3-add-gravity--make-the-ball-fall-faster-plan)
     - [1️⃣ Three concepts to know](#1️⃣-three-concepts-to-know)
     - [2️⃣ Make velocity variable](#2️⃣-make-velocity-variable)
     - [3️⃣ Define gravity](#3️⃣-define-gravity)
     - [4️⃣ Handle the floor collision](#4️⃣-handle-the-floor-collision)
     - [✅ Mission Complete!](#-mission-complete-1)
-  - [🕹️ Part 4: Make the Ball Bounce (and Feel Real!)](#️-part-4-make-the-ball-bounce-and-feel-real)
+  - [🦘 Part 4: Make the Ball Bounce (and Feel Real!)](#-part-4-make-the-ball-bounce-and-feel-real)
     - [1️⃣ Simple bounce](#1️⃣-simple-bounce)
     - [2️⃣ Add energy loss (realistic bounce)](#2️⃣-add-energy-loss-realistic-bounce)
     - [3️⃣ ⚠️ Final tweak: Stop tiny velocities](#3️⃣-️-final-tweak-stop-tiny-velocities)
@@ -50,13 +50,17 @@ This tutorial requires the following software:
 
 The linked [Installation](INSTALL.md) instructions install these requirements for Windows and Mac.
 
-## 🕹️ Part I: Tutorial Overview
+## ⚽ Part I: Tutorial Overview
 
 In this tutorial, we’ll use code to control what appears on the screen. Coding is how we give instructions to a computer using a programming language—in this case, Python.
 
 Python is popular because it’s easy to read (its code looks a bit like plain English!) and very versatile. It’s used by companies like Google, Netflix, Spotify, and NASA, and across many fields including web development, data science, automation, scientific research, game design, and healthcare—for tasks such as predictive analytics and image analysis. It’s a great choice for beginners, while still being powerful enough for building complex projects. 👍
 
-In this tutorial, we’ll **simulate a ball falling and bouncing off the ground** ⚽ 🔽. Along the way, you’ll learn how to position the ball, update its movement as it falls, and even add gravity so it loses energy with each bounce.
+In this tutorial, we’ll **simulate a ball falling and bouncing off the ground** ⚽ 🔽. Along the way, you’ll learn how to position the ball, update its movement as it falls, and even add gravity so it loses energy with each bounce. Maths in action! ⚙️ 🔢🧮📐𝞹🧠 ⚙️
+
+Your final project may look like this:
+
+![completed!](assets/bouncing-completed.gif)
 
 As you progress, you’ll explore **key programming concepts** such as sequential steps, variables, functions, loops, and if-statements. These are essential building blocks that can be used to create a wide range of exciting projects.
 
@@ -238,7 +242,7 @@ You have successfully made the ball fall at a constant speed! Here’s what you�
 - How to draw shapes and colors on the screen using Pygame.
 - How to use comments to explain your code and make it easier to understand.
 
-## 🕹️ Part 2: Add a Floor – Make the Ball Bounce!
+## 🧱 Part 2: Add a Floor – Make the Ball Bounce!
 
 Whoa! Why does the ball just keep falling off the screen? 😱 What happens when `ball_y` goes past the bottom (`HEIGHT`, 800 in our case)?
 
@@ -317,7 +321,7 @@ print("Ball y position:", ball_y)
 
 💡 Now you can **experiment**: try different ball sizes, speeds, colors, or even create your own floor designs. Make it yours!
 
-## 🕹️ Part 3: Add Gravity – Make the Ball Fall Faster! Plan
+## 🍃 Part 3: Add Gravity – Make the Ball Fall Faster! Plan
 
 🚀 **Mission briefing:** So far, our ball just falls at a constant speed... but in real life, **gravity makes things speed up** as they fall. Let’s make our ball obey the laws of physics! 🌎💨
 
@@ -381,7 +385,7 @@ In the previous step, you made sure the ball stops at the floor. However, the ve
 
 💡 **Bonus challenge:** try changing `GRAVITY` or the ball’s starting height—what happens if you make it really heavy or light? 🌟
 
-## 🕹️ Part 4: Make the Ball Bounce (and Feel Real!)
+## 🦘 Part 4: Make the Ball Bounce (and Feel Real!)
 
 🚀 **Mission briefing:** Your ball hits the floor... and just stops 😅 Let’s fix that by making it **bounce**—and then make it realistic! 🏀
 
@@ -441,7 +445,9 @@ You now have a bouncing ball with realistic physics:
 - Energy loss over time.
 - Eventually comes to rest.
 
-💡 Try experimenting—what happens if you change `ENERGY_LOSS` and `GRAVITY`?
+💡 Try experimenting—what happens if you change `ENERGY_LOSS` and `GRAVITY`?  How would you make this simulation:
+
+![completed!](assets/bouncing-double-anim.gif)
 
 ## 🎨 Part 5: Upgrade the visuals
 
